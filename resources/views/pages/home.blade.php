@@ -30,7 +30,21 @@
             }
         }
         body{
-            background-color: #00ffbf;
+            text-align: center;
+            align-content: center;
+            
+        }
+
+        .animated-background {
+            background: linear-gradient(45deg, #00ccff, #5433e6, #d63ce4);
+            background-size: 600% 600%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
         }
 
         .bg-custom{
